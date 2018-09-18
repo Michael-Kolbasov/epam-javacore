@@ -2,8 +2,8 @@ public class TrafficLight {
     //здесь храним цвет светофора
     private String colour;
 
-    //строковые константы для изменения цвета текста вывода
-    //не работает в Windows shell, но работает в Idea и Unix
+    /* строковые константы для изменения цвета текста вывода
+     * не работает в Windows shell, но работает в Idea и Unix */
     private static final String ANSI_RESET = "\u001B[0m";
     private static final String ANSI_RED = "\u001B[31m";
     private static final String ANSI_GREEN = "\u001B[32m";
@@ -20,8 +20,8 @@ public class TrafficLight {
         } else if (currentMinute > 2 && currentMinute <= 5) {
             setColour("yellow");
         }
-        //currentMinute == 0 нужно для проверки ввода чисел, которые больше и кратны 10 (20, 30...).
-        //currentMinute == 0 на изначальном вводе с клавиатуры выбрасывает WrongDataInputException
+        /* currentMinute == 0 нужно для проверки ввода чисел, которые больше и кратны 10 (20, 30...).
+         * currentMinute == 0 на изначальном вводе с клавиатуры выбрасывает WrongDataInputException */
         else if ((currentMinute > 5 && currentMinute <= 10) || currentMinute == 0) {
             setColour("green");
         } else
