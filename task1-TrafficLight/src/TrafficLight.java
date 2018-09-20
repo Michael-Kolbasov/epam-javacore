@@ -1,5 +1,4 @@
 public class TrafficLight {
-    //здесь храним цвет светофора
     private String colour;
 
     /* строковые константы для изменения цвета текста вывода
