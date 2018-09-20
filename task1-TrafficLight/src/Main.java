@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
-/* Домашнее задание #1 Светофор
- * Колбасов Михаил
- * Сделать светофор с выводом цвета в консоль. Вы вводите минуту (от нуля до n) и получаете какой
- * свет горит на светофоре. Первые две минуты красный, потом три минуты желтый и пять минут зеленый.
- * */
+/**
+ * Task #1 Traffic light
+ * @author Michael Kolbasov
+ * Create a traffic light that outputs a signal colour. You enter a minute (from zero to n) and get
+ * a current signal light. First two minutes is red light, next three minutes is yellow and last five minutes is green.
+ */
 
 public class Main {
 
@@ -12,9 +13,14 @@ public class Main {
         new Main().run();
     }
 
-    /* бесконечный цикл; определяет цвет светофора, ловит исключения WrongDataInputException и NumberFormatException
-     * и предлагает начать ввод снова или выйти из программы
-     * */
+    /**
+     * Infinite cycle. Defines a signal and asks if you want to continue defining or to exit program.
+     * All non-numeric data (letters, symbols etc.) is deleted from the input and the number is parsed.
+     * @throws  WrongDataInputException
+     *          If the {@code currentMinute} argument is a negative number, zero or a too big number.
+     * @throws  NumberFormatException
+     *          If the {@code userInput} is empty.
+     */
     private void run() {
         Scanner sc = new Scanner(System.in);
         StringBuilder userInput = new StringBuilder();
@@ -23,48 +29,26 @@ public class Main {
         while (true) {
             System.out.println("Enter time in minutes to get the traffic light colour: ");
             userInput.append(sc.nextLine());
-
-            /* отрицательное число, ноль или слишком большое число (Double.MAX_VALUE - 1.7*10^308) выбросят WrongDataInputException
-             * все нечисловые данные (буквы, символы и т.д.) из ввода удаляются и парсится число. Regex: [^0-9.-]
-             * пустой ввод выбросит NumberFormatException
-             * */
             try {
                 currentMinute = Double.parseDouble(userInput.toString().replaceAll("[^0-9.-]", ""));
-
                 if (currentMinute <= 0 || currentMinute > Double.MAX_VALUE) {
                     throw new WrongDataInputException("Something bad happened, sorry. Check your input, it must be a positive number");
                 }
-                if (userInput.toString().isEmpty()) {
-                    throw new NumberFormatException();
-                }
-
-                /* сокращаем ввод излишне большого числа до [0 - 10]
-                 * здесь currentMinute может принимать значение 0, когда вводится число, кратное и больше 10 (20, 30...)
-                 * это нужно для корректного определения зеленого цвета
-                 * */
                 while (currentMinute > 10) {
                     currentMinute %= 10;
                 }
-
-                /* здесь происходит магия определения цвета светофора
-                 * (0 - 2] - красный, (2 - 5] - желтый, (5 - 10] и 0 - зеленый
-                 * */
                 TrafficLight trafficLight = new TrafficLight(currentMinute);
                 System.out.println(trafficLight);
             } catch (WrongDataInputException | NumberFormatException e) {
                 e.printStackTrace();
             }
-
-            //очищаем ввод и предлагаем повторить или выйти из программы
             userInput.delete(0, userInput.length());
             System.out.println("\nEnter EXIT to exit or any key to continue: ");
             userInput.append(sc.nextLine());
-
             if (userInput.toString().equalsIgnoreCase("exit")) {
                 sc.close();
                 break;
             }
-
             userInput.delete(0, userInput.length());
             System.out.println();
         }

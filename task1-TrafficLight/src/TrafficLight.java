@@ -1,8 +1,10 @@
+/**
+ * @value ANSI_RED and other Strings change the colour of output text.
+ *        It doesn't work in Windows shell, but it works in Idea and UNIX.
+ */
+
 public class TrafficLight {
     private String colour;
-
-    /* строковые константы для изменения цвета текста вывода
-     * не работает в Windows shell, но работает в Idea и Unix */
     private static final String ANSI_RESET = "\u001B[0m";
     private static final String ANSI_RED = "\u001B[31m";
     private static final String ANSI_GREEN = "\u001B[32m";
@@ -12,22 +14,22 @@ public class TrafficLight {
         return colour = s;
     }
 
-    //если в конструкторе при инициализации что-то пошло не по плану, вместо цвета передастся строка о поломке
+    /**
+     * If something goes wrong in constructor, the {@code colour} argument will be an error message.
+     * @param currentMinute must be a non-negative digit.
+     */
     TrafficLight(double currentMinute) {
         if (currentMinute > 0 && currentMinute <= 2) {
             setColour("red");
         } else if (currentMinute > 2 && currentMinute <= 5) {
             setColour("yellow");
         }
-        /* currentMinute == 0 нужно для проверки ввода чисел, которые больше и кратны 10 (20, 30...).
-         * currentMinute == 0 на изначальном вводе с клавиатуры выбрасывает WrongDataInputException */
         else if ((currentMinute > 5 && currentMinute <= 10) || currentMinute == 0) {
             setColour("green");
         } else
             setColour("Oops, this shouldn't happen. The traffic light is broken, call your system administrator");
     }
 
-    //здесь выводим цвет светофора
     @Override
     public String toString() {
         switch (colour) {
