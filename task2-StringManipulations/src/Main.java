@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String message = "Check for the fifth task: a bb ccc 4444";
+        String message = "Check for the fourth task: a bb ccc 4444 ccc"; //12
         System.out.println("Initial message: \n" + message + "\n");
 
         doFirstTask(message);
@@ -71,22 +71,20 @@ public class Main {
     }
 
     /**
-     * Prints the amount of neighboring letters in the {@param string}.
+     * Prints the amount of identical adjacent symbols in the {@param string}.
      */
     @NotNull
     private static void doFourthTask(String string) {
         System.out.println("Fourth task:");
         int count = 0;
         boolean isNeighbor = false;
-
         for (int i = 0; i < string.length(); i++) {
             if (i == string.length() - 1) {
                 if (isNeighbor) {
                     count++;
                 }
                 break;
-            }
-            if (string.charAt(i) == string.charAt(i + 1)) {
+            } else if (string.charAt(i) == string.charAt(i + 1)) {
                 count++;
                 isNeighbor = true;
             }
@@ -97,8 +95,7 @@ public class Main {
                 }
             }
         }
-
-        System.out.println("This string has " + count + " neighboring symbols.\n");
+        System.out.println("This string has " + count + "identical adjacent symbols.\n");
     }
 
     /**
