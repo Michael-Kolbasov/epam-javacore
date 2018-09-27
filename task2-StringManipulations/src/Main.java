@@ -107,6 +107,10 @@ public class Main {
     @NotNull
     private static void doFifthTask(String string) {
         System.out.println("Fifth task:");
+        if (string.length() < 5) {
+            System.out.println("Input is too short, must be 5 or more symbols");
+            return;
+        }
         char[] letters = string.toCharArray();
         char secondChar = letters[1];
         char fifthChar = letters[4];
@@ -128,8 +132,7 @@ public class Main {
         StringBuilder modifiedString = new StringBuilder();
         StringBuilder temp = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
-            temp.append(array[i]);
-            temp.reverse().append(" ");
+            temp.append(array[i]).reverse().append(" ");
             modifiedString.append(temp);
             temp.setLength(0);
         }
