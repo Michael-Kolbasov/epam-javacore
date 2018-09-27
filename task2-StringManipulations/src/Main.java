@@ -39,24 +39,18 @@ public class Main {
     /**
      * Prints the third symbol from the {@code string}.
      */
+    @NotNull
     private static void doFirstTask(String string) {
         System.out.println("First task:");
-        if (string == null) {
-            System.out.println("Empty string.");
-            return;
-        }
         System.out.println(string.charAt(2) +"\n");
     }
 
     /**
      * Prints the last symbol from the {@code string}
      */
+    @NotNull
     private static void doSecondTask(String string) {
         System.out.println("Second task:");
-        if (string == null) {
-            System.out.println("Empty string.");
-            return;
-        }
         System.out.println(string.charAt(string.length() - 1) + "\n");
     }
 
@@ -79,12 +73,9 @@ public class Main {
     /**
      * Prints the amount of neighboring letters in the {@param string}.
      */
+    @NotNull
     private static void doFourthTask(String string) {
         System.out.println("Fourth task:");
-        if (string == null) {
-            System.out.println("Empty string.");
-            return;
-        }
         int count = 0;
         boolean isNeighbor = false;
 
@@ -113,12 +104,9 @@ public class Main {
     /**
      * Changes the second and fifth symbols in the {@code string} and prints it.
      */
+    @NotNull
     private static void doFifthTask(String string) {
         System.out.println("Fifth task:");
-        if (string == null) {
-            System.out.println("Empty string.");
-            return;
-        }
         char[] letters = string.toCharArray();
         char secondChar = letters[1];
         char fifthChar = letters[4];
