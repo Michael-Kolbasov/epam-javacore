@@ -1,2 +1,2 @@
 # EPAM-JavaCore
-Homework for courses
+Homework for Java EPAM 2018 courses
