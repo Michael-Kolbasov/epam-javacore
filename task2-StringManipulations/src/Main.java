@@ -39,8 +39,7 @@ public class Main {
     /**
      * Prints the third symbol from the {@code string}.
      */
-    @NotNull
-    private static void doFirstTask(String string) {
+    private static void doFirstTask(@NotNull String string) {
         System.out.println("First task:");
         System.out.println(string.charAt(2) +"\n");
     }
@@ -48,8 +47,7 @@ public class Main {
     /**
      * Prints the last symbol from the {@code string}
      */
-    @NotNull
-    private static void doSecondTask(String string) {
+    private static void doSecondTask(@NotNull String string) {
         System.out.println("Second task:");
         System.out.println(string.charAt(string.length() - 1) + "\n");
     }
@@ -73,8 +71,7 @@ public class Main {
     /**
      * Prints the amount of identical adjacent symbols in the {@param string}.
      */
-    @NotNull
-    private static void doFourthTask(String string) {
+    private static void doFourthTask(@NotNull String string) {
         System.out.println("Fourth task:");
         int count = 0;
         boolean isNeighbor = false;
@@ -101,8 +98,7 @@ public class Main {
     /**
      * Changes the second and fifth symbols in the {@code string} and prints it.
      */
-    @NotNull
-    private static void doFifthTask(String string) {
+    private static void doFifthTask(@NotNull String string) {
         System.out.println("Fifth task:");
         if (string.length() < 5) {
             System.out.println("Input is too short, must be 5 or more symbols");
