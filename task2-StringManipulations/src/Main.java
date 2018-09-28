@@ -57,7 +57,7 @@ public class Main {
      * Index count starts from 0.
      * @throws InputMismatchException if the input is not a digit.
      */
-    private static void doThirdTask(String string) {
+    private static void doThirdTask(@NotNull String string) {
         System.out.println("Third task:");
         System.out.println("Please, enter a symbol position number.");
         try (Scanner sc = new Scanner(System.in)) {
