@@ -115,7 +115,7 @@ public class Main {
 
     /**
      * Flips the words in the {@code userInput} backwards.
-     * Note: it flips the words, not the hole sentence.
+     * Note: it flips the words, not the whole sentence.
      */
     private static void doSixthTask() {
         Scanner sc = new Scanner(System.in);
