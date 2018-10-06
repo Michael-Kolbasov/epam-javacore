@@ -3,7 +3,7 @@
  *  Task #2 String Manipulations
  *  @author Michael Kolbasov
  *
- *  Given a word. Output his:
+ *  Given a word. Output its:
  *  1) third symbol;
  *  2) last symbol;
  *  3) K-th symbol;
