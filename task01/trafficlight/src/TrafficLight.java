@@ -18,7 +18,7 @@ public class TrafficLight {
      * If something goes wrong in constructor, the {@code colour} argument will be an error message.
      * @param currentMinute must be a non-negative digit.
      */
-    TrafficLight(double currentMinute) {
+    public TrafficLight(double currentMinute) {
         if (currentMinute > 0 && currentMinute <= 2) {
             setColour("red");
         } else if (currentMinute > 2 && currentMinute <= 5) {

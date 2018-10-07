@@ -15,7 +15,8 @@ public class Task {
     }
 
     /**
-     * Finds the third symbol in the {@code message}.
+     * @throws  IllegalArgumentException if the {@code message} is null or its length is less than 3.
+     * @return  third symbol in the {@code message}.
      */
     public char doFirstTask(Task task) {
         System.out.println("First task.");
@@ -27,7 +28,8 @@ public class Task {
     }
 
     /**
-     * Finds the last symbol in the {@code message}
+     * @throws  IllegalArgumentException if the {@code message} is null or empty.
+     * @return  last symbol in the {@code message}.
      */
     public char doSecondTask(Task task) {
         System.out.println("Second task.");
@@ -39,9 +41,10 @@ public class Task {
     }
 
     /**
-     * Finds the {@code position - input via keyboard} symbol in the {@code message}.
-     * Index count starts from 0.
-     * @throws InputMismatchException if the input is not a digit.
+     * Note:    Index count starts from 0.
+     * @throws  InputMismatchException if the {@code position} is not a digit.
+     * @throws  IllegalArgumentException if the {@code message} is null or empty.
+     * @return  K-th symbol {@code position - input via keyboard} in the {@code message}.
      */
     public char doThirdTask(Task task) {
         System.out.println("Third task.");
@@ -65,7 +68,8 @@ public class Task {
     }
 
     /**
-     * Finds the amount of identical adjacent symbols in the {@code message}.
+     * @throws  IllegalArgumentException if the {@code message} is null or empty.
+     * @return  amount of identical adjacent symbols in the {@code message}.
      */
     public int doFourthTask(Task task) {
         System.out.println("Fourth task.");
@@ -97,7 +101,8 @@ public class Task {
     }
 
     /**
-     * Changes the second and fifth symbols in the {@code message}.
+     * @throws  IllegalArgumentException if the {@code message} is null or its length is less than 5.
+     * @return  modified {@code message} which second and fifth symbols are flipped.
      */
     public String doFifthTask(Task task) {
         System.out.println("Fifth task.");
@@ -114,8 +119,9 @@ public class Task {
     }
 
     /**
-     * Flips the words in the {@code userInput} backwards.
      * Note: it flips the words, not the whole sentence.
+     * @throws  IllegalArgumentException if the {@code message} is empty.
+     * @return  modified {@code userInput} with flipped letters in the words.
      */
     public String doSixthTask() {
         System.out.println("Sixth task.");

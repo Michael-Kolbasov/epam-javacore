@@ -35,7 +35,6 @@ public class Main {
         waitTwoSeconds();
 
         System.out.println(task.doSixthTask());
-
     }
 
     private static void waitTwoSeconds() {
