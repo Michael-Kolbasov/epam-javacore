@@ -33,6 +33,7 @@ public class Task12x272 extends AbstractTask {
         return resultB;
     }
 
+    @Override
     public String getResult() {
         return "\n\tA) " + getResultA() + "\n\tB) " + getResultB();
     }
