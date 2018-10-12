@@ -26,6 +26,6 @@ public class Task12x270 extends AbstractTask {
                 }
             }
         }
-        return this.result = stringBuilder.toString();
+        return result = stringBuilder.toString();
     }
 }
