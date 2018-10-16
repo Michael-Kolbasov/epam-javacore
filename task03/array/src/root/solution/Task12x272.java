@@ -14,7 +14,6 @@ package root.solution;
  *   3       *       *
  *   4   *       *       *
  */
-
 public class Task12x272 extends AbstractTask {
     private String resultA;
     private String resultB;

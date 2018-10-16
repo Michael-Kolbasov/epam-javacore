@@ -4,7 +4,6 @@ package root.solution;
  *  12.274
  * Print words, built by odd elements of every array column.
  */
-
 public class Task12x274 extends AbstractTask {
 
     public Task12x274() {
@@ -28,4 +27,3 @@ public class Task12x274 extends AbstractTask {
         return stringBuilder.toString();
     }
 }
-

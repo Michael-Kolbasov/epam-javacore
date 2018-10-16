@@ -4,7 +4,6 @@ package root.solution;
  * 12.270
  * Print a string made of four characters from corners of an array (in any order).
  */
-
 public class Task12x270 extends AbstractTask {
 
     Task12x270() {

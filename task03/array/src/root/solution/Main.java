@@ -5,14 +5,12 @@ package root.solution;
  * @author Michael Kolbasov
  *
  * The array that is used for all tasks is:
- *    0 1 2 3 4
- * 0  a b c d e
- * 1  f g h i j
- * 2  k l m n o
- * 3  p q r s t
- * 4  u v w x y
+ * {{a, b, c, d, e},
+ *  {f, g, h, i, j},
+ *  {k, l, m, n, o},
+ *  {p, q, r, s, t},
+ *  {u, v, w, x, y}}
  */
-
 public class Main {
 
     public static void main(String[] args) {

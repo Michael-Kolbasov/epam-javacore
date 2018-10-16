@@ -4,7 +4,6 @@ package root.solution;
  *  12.273
  * Print words, built by even elements of every array row.
  */
-
 public class Task12x273 extends AbstractTask {
 
     public Task12x273() {
@@ -27,4 +26,3 @@ public class Task12x273 extends AbstractTask {
         return stringBuilder.toString();
     }
 }
-

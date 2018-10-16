@@ -8,7 +8,6 @@ import java.io.InputStreamReader;
  * 12.271
  * Write a program that prints a word, built by symbols of several following indexes from some line of an array.
  */
-
 public class Task12x271 extends AbstractTask {
     private Integer[] indexes;
 

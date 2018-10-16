@@ -12,7 +12,6 @@
  *  5) Given a word. Flip its second and fifth letters;
  *  6) Enter a sentence from keyboard. Flip its letters. Example: this code is great -> siht edoc si taerg.
  */
-
 public class Main {
 
     public static void main(String[] args) {

@@ -4,7 +4,6 @@ package root.solution;
  * A superclass for all Tasks.
  * {@code dataArray} and {@code result} are common fields that are used by constructors in all subclasses.
  */
-
 abstract class AbstractTask {
     protected Character[][] dataArray;
     protected String result;
@@ -30,7 +29,7 @@ abstract class AbstractTask {
     }
 
     /**
-     * Used by Task12x272 and Task12x274
+     * Used by Task12x272 and Task12x274. Works for 2D arrays with equal sizes.
      * @param array Character[5][5] array
      * @return      new array with same content but with different indexes.
      *              [0][0] -> [0][4], [0][1] -> [1][4];
