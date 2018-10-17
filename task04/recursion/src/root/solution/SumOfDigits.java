@@ -7,8 +7,7 @@ import java.io.InputStreamReader;
 /**
  * Task 3) Write a recursive function: a) for calculating sum of digits of a natural number.
  */
-public class SumOfDigits {
-    private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+public class SumOfDigits extends AbstractTask {
     private final int number;
     private final int result;
 
@@ -32,24 +31,5 @@ public class SumOfDigits {
             return number % 10 + findSumOfDigits(number / 10);
         }
         return 0;
-    }
-
-    private int setNumber() {
-        int number = 0;
-        System.out.println("Enter a number to find sum of its digits: ");
-        try {
-            number = Integer.parseInt(reader.readLine());
-        } catch (IOException | NumberFormatException e) {
-            e.printStackTrace();
-        }
-        return number;
-    }
-
-    private void closeStream(@NotNull BufferedReader reader) {
-        try {
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

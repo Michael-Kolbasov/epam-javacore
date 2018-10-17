@@ -7,8 +7,7 @@ import java.io.InputStreamReader;
 /**
  * Task 1) Write a recursive function for calculating factorial of a natural number N;
  */
-public class Factorial {
-    private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+public class Factorial extends AbstractTask {
     private final int number;
     private final long result;
 
@@ -35,24 +34,5 @@ public class Factorial {
             return 1;
         }
         return number * findFactorial(number - 1);
-    }
-
-    private int setNumber() {
-        int number = 0;
-        System.out.println("Enter a number to find its factorial: ");
-        try {
-            number = Integer.parseInt(reader.readLine());
-        } catch (IOException | NumberFormatException e) {
-            e.printStackTrace();
-        }
-        return number;
-    }
-
-    private void closeStream(@NotNull BufferedReader reader) {
-        try {
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

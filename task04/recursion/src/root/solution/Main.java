@@ -12,9 +12,9 @@ package root.solution;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Factorial());
-        System.out.println(new Power());
-        System.out.println(new SumOfDigits());
-        System.out.println(new AmountOfDigits());
+        System.out.println("Enter a number to find its factorial:\n" + new Factorial());
+        System.out.println("Enter a number to find its power:\n" + new Power());
+        System.out.println("Enter a number to find sum of its digits:\n" + new SumOfDigits());
+        System.out.println("Enter a number to find amount of its digits:\n" + new AmountOfDigits());
     }
 }

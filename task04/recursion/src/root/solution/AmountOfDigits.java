@@ -7,8 +7,7 @@ import java.io.InputStreamReader;
 /**
  * Task 3) Write a recursive function: b) for calculating amount of digits of a natural number.
  */
-public class AmountOfDigits {
-    private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+public class AmountOfDigits extends AbstractTask {
     private final int number;
     private final int result;
 
@@ -35,25 +34,6 @@ public class AmountOfDigits {
             return 1;
         } else {
             return 1 + findAmountOfDigits(number / 10);
-        }
-    }
-
-    private int setNumber() {
-        int number = 0;
-        System.out.println("Enter a number to find the amount of its digits: ");
-        try {
-            number = Integer.parseInt(reader.readLine());
-        } catch (IOException | NumberFormatException e) {
-            e.printStackTrace();
-        }
-        return number;
-    }
-
-    private void closeStream(@NotNull BufferedReader reader) {
-        try {
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }
