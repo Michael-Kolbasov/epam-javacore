@@ -4,14 +4,20 @@ package root.solution;
  * Task 3) Write a recursive function: a) for calculating sum of digits of a natural number.
  */
 public class SumOfDigits extends AbstractTask {
-    private final int number;
-    private final int result;
+    private int number;
+    private int result;
 
     public SumOfDigits() {
         number = setNumber();
         result = findSumOfDigits(number);
         closeStream(reader);
     }
+
+    /**
+     * This constructor is for tests.
+     * @param dummy Any number.
+     */
+    public SumOfDigits(int dummy) { }
 
     @Override
     public String toString() {
@@ -23,6 +29,9 @@ public class SumOfDigits extends AbstractTask {
      * @return          Sum of digits of {@code number}.
      */
     public int findSumOfDigits(int number) {
+        if (number < 0) {
+            number *= -1;
+        }
         if (number != 0) {
             return number % 10 + findSumOfDigits(number / 10);
         }

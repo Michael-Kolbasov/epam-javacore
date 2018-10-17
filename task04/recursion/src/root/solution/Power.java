@@ -5,9 +5,9 @@ import java.io.IOException;
  * Task 2) Write a recursive function for calculating power A of a real number N (N - natural number);
  */
 public class Power extends AbstractTask {
-    private final int number;
-    private final int power;
-    private final long result;
+    private int number;
+    private int power;
+    private long result;
 
     public Power() {
         number = setNumber();
@@ -15,6 +15,12 @@ public class Power extends AbstractTask {
         result = findPower(power, number);
         closeStream(reader);
     }
+
+    /**
+     * This constructor is for tests.
+     * @param dummy Any number.
+     */
+    public Power(int dummy) { }
 
     @Override
     public String toString() {
