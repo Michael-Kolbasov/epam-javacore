@@ -1,8 +1,4 @@
 package root.solution;
-import com.sun.istack.internal.NotNull;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * Task 3) Write a recursive function: b) for calculating amount of digits of a natural number.

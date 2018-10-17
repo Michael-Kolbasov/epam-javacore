@@ -1,8 +1,5 @@
 package root.solution;
-import com.sun.istack.internal.NotNull;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * Task 2) Write a recursive function for calculating power A of a real number N (N - natural number);

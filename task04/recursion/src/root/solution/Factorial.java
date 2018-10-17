@@ -1,8 +1,4 @@
 package root.solution;
-import com.sun.istack.internal.NotNull;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * Task 1) Write a recursive function for calculating factorial of a natural number N;
