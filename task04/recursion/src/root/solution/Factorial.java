@@ -4,8 +4,6 @@ package root.solution;
  * Task 1) Write a recursive function for calculating factorial of a natural number N;
  */
 public class Factorial extends AbstractTask {
-    private int number;
-    private long result;
 
     public Factorial() {
         number = setNumber();

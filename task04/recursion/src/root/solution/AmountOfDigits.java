@@ -4,8 +4,6 @@ package root.solution;
  * Task 3) Write a recursive function: b) for calculating amount of digits of a natural number.
  */
 public class AmountOfDigits extends AbstractTask {
-    private int number;
-    private int result;
 
     public AmountOfDigits() {
         number = setNumber();
@@ -28,7 +26,7 @@ public class AmountOfDigits extends AbstractTask {
      * @param number    A number to calculate the amount of its digits.
      * @return          The amount of digits of {@code number}.
      */
-    public int findAmountOfDigits(int number) {
+    public long findAmountOfDigits(int number) {
         if (number < 0) {
             number *= -1;
         }
