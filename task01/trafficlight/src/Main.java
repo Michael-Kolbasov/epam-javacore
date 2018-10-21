@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Create a traffic light that outputs a signal colour. You enter a minute (from zero to n) and get
  * a current signal light. First two minutes is red light, next three minutes is yellow and last five minutes is green.
  */
-
 public class Main {
 
     public static void main(String[] args) {

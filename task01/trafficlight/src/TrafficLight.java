@@ -1,8 +1,7 @@
 /**
- * @value ANSI_RED and other Strings change the colour of output text.
+ * @value ANSI_RED and other String constants change the colour of console output text.
  *        It doesn't work in Windows shell, but it works in Idea and UNIX.
  */
-
 public class TrafficLight {
     private String colour;
     private static final String ANSI_RESET = "\u001B[0m";
