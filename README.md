@@ -2,13 +2,13 @@
 Homework for Java EPAM 2018 courses.
 
   ### Task #1 Traffic light 
-   [https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task01/trafficlight/src](Solution)
+   [Solution]:https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task01/trafficlight/src
    
  Create a traffic light that outputs a signal colour. You enter a minute (from zero to n) and get
  a current signal light. First two minutes is red light, next three minutes is yellow and last five minutes is green.
  
   ### Task #2 Strings   
-  [https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task02/string/manipulations/src](Solution)
+  [Solution]:https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task02/string/manipulations/src
   
  Given a word. Output its:
  1) third symbol;
@@ -19,7 +19,7 @@ Homework for Java EPAM 2018 courses.
  6) Enter a sentence from keyboard. Flip its letters. Example: this code is great -> siht edoc si taerg.
  
   ### Task #3 Arrays of Arrays 
-  [https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task03/array](Solution)
+  [Solution]:https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task03/array
    
   1) Print a string made of four characters from corners of an array (in any order).
   2) Write a program that prints a word, built by symbols of several following indexes from some line of an array.
@@ -28,7 +28,7 @@ Homework for Java EPAM 2018 courses.
   5) Print words, built by odd elements of every array column.
 
   ### Task #4 Recursion
-  [https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task04/recursion](Solution)
+  [Solution]:https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task04/recursion
    
   1) Write a recursive function for calculating factorial of a natural number N;
   2) Write a recursive function for calculating power A of a real number N (N - natural number);
