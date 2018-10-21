@@ -4,7 +4,7 @@ package root.solution;
  *  12.274
  * Print words, built by odd elements of every array column.
  */
-public class Task12x274 extends AbstractTask {
+public class Task12x274 extends AbstractTask implements ArrayTurner {
 
     public Task12x274() {
         dataArray = fillArray();
@@ -15,7 +15,7 @@ public class Task12x274 extends AbstractTask {
      * @return words, built by odd elements of every array column.
      */
     public String resolveTask(Character[][] array) {
-        Character[][] localArray = turnArray90DegreesRight(array);
+        Character[][] localArray = turnArray90DegreesClockwise(array);
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < localArray.length; i++) {
             for (int j = localArray[i].length - 1; j >= 0; j--) {

@@ -14,7 +14,7 @@ package root.solution;
  *   3       *       *
  *   4   *       *       *
  */
-public class Task12x272 extends AbstractTask {
+public class Task12x272 extends AbstractTask implements ArrayTurner {
     private String resultA;
     private String resultB;
 
@@ -64,7 +64,7 @@ public class Task12x272 extends AbstractTask {
      *  *      B) Up to down in every column
      */
     public String resolveTaskB(Character[][] array) {
-        Character[][] localArray = turnArray90DegreesRight(array);
+        Character[][] localArray = turnArray90DegreesClockwise(array);
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < localArray.length; i++) {
             for (int j = localArray[i].length - 1; j >= 0; j--) {
