@@ -1,7 +1,7 @@
 package root.solution;
 
 /**
- * Task #4 Thread-safe Automated Teller Machine
+ * Task #5 Thread-safe Automated Teller Machine
  * @author Michael Kolbasov
  */
 public class Main {
