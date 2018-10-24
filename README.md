@@ -8,7 +8,7 @@ Homework for Java EPAM 2018 courses.
  a current signal light. First two minutes is red light, next three minutes is yellow and last five minutes is green.
  
   ### Task #2 Strings   
-  [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task02/string/manipulations/src)
+  [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task02/string/manipulations/)
   
  Given a word. Output its:
  1) third symbol;
@@ -35,3 +35,8 @@ Homework for Java EPAM 2018 courses.
   3) Write a recursive function:
       a) for calculating sum of digits of a natural number;
       b) for calculating amount of digits of a natural number.
+      
+  ### Task #5 ATM
+  [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task05/atm)
+  
+  Create a thread-safe Automated Teller Machine.
