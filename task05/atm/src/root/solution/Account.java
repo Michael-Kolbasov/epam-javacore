@@ -33,9 +33,14 @@ public final class Account {
      * @param amount    amount to deposit.
      */
     public void deposit(double amount) {
-        final BigDecimal amountToDeposit = BigDecimal.valueOf(amount).setScale(2, BigDecimal.ROUND_DOWN);
-        synchronized (key) {
-            funds = funds.add(amountToDeposit);
+        if (amount <= 0) {
+            System.out.println("Incorrect input. Amount must be more than 0. Your input: " + amount);
+            return;
+        } else {
+            final BigDecimal amountToDeposit = BigDecimal.valueOf(amount).setScale(2, BigDecimal.ROUND_DOWN);
+            synchronized (key) {
+                funds = funds.add(amountToDeposit);
+            }
         }
     }
 

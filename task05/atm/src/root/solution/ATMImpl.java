@@ -17,10 +17,15 @@ public final class ATMImpl implements ATMBehavior {
      */
     @Override
     public void deposit(double amount, Account account) {
-        final BigDecimal amountToDeposit = BigDecimal.valueOf(amount).setScale(2, BigDecimal.ROUND_DOWN);
-        synchronized (key) {
-            fundsAvailable = fundsAvailable.add(amountToDeposit);
-            account.deposit(amount);
+        if (amount <= 0) {
+            System.out.println("Incorrect input. Amount must be more than 0. Your input: " + amount);
+            return;
+        } else {
+            final BigDecimal amountToDeposit = BigDecimal.valueOf(amount).setScale(2, BigDecimal.ROUND_DOWN);
+            synchronized (key) {
+                fundsAvailable = fundsAvailable.add(amountToDeposit);
+                account.deposit(amount);
+            }
         }
     }
 
