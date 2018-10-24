@@ -8,7 +8,7 @@ import java.math.BigDecimal;
  */
 public final class ATMImpl implements ATMBehavior {
     private volatile BigDecimal fundsAvailable = BigDecimal.valueOf(1000).setScale(2, BigDecimal.ROUND_DOWN);
-    private final Object key = new Object();
+    private static final Object key = new Object();
 
     /**
      * This overridden version of depositing adds deposited funds to ATMImpl's {@code fundsAvailable}.
