@@ -40,3 +40,8 @@ Homework for Java EPAM 2018 courses.
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task05/atm)
   
   Create a thread-safe Automated Teller Machine.
+  
+  ### Task #6 Lambda
+  [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task06/functional/interface/src/root/solution)
+  
+  Create a functional interface and use it with lambda expression.
