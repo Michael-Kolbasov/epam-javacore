@@ -49,8 +49,10 @@ public final class ATMImpl implements ATMBehavior {
             synchronized (key) {
                 if (account.withdraw(amount)) {
                     fundsAvailable = fundsAvailable.subtract(amountToWithdraw);
+                    return true;
+                } else {
+                    return false;
                 }
-                return true;
             }
         }
     }

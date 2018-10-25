@@ -27,8 +27,8 @@ public class ATMImplTest {
     @Test
     public void testWithdraw_AllOK() {
         assertFalse(atm.withdraw(-1, account));
-        assertTrue(atm.withdraw(1000, account));
+        assertFalse(atm.withdraw(1000, account));
         assertTrue(atm.withdraw(100, account));
-        assertTrue(atm.withdraw(1, account));
+        assertFalse(atm.withdraw(1, account));
     }
 }
