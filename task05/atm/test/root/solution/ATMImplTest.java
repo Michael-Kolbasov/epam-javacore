@@ -8,9 +8,12 @@ public class ATMImplTest {
     private ATMImpl atm;
     private Account account;
 
+    /**
+     * ATM has 1000 funds on init
+     */
     @Before
     public void setUp() {
-        atm = new ATMImpl();    //ATM has 1000 funds on init
+        atm = new ATMImpl();
         account = Account.getInstance();
         atm.deposit(100, account);
     }
