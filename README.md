@@ -45,3 +45,8 @@ Homework for Java EPAM 2018 courses.
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task06/functional/interface/src/root/solution)
   
   Create a functional interface and use it with lambda expression.
+
+  ### Task #7 Sea Battle
+  [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task07/seabattle)
+
+  Create a Sea Battle game using Maven, Factory pattern and AI. 2D version.
