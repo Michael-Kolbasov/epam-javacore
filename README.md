@@ -21,32 +21,42 @@ Homework for Java EPAM 2018 courses.
   ### Task #3 Arrays of Arrays 
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task03/array)
    
-  1) Print a string made of four characters from corners of an array (in any order).
-  2) Write a program that prints a word, built by symbols of several following indexes from some line of an array.
-  3) Given a two-dimensional array 5 * 5, filled with letters. Print a word, built by array elements marked with stars while reading them: A) Left to right in every row, B) Up to down in every column.
-  4) Print words, built by even elements of every array row.
-  5) Print words, built by odd elements of every array column.
+ 1) Print a string made of four characters from corners of an array (in any order).
+ 2) Write a program that prints a word, built by symbols of several following indexes from some line of an array.
+ 3) Given a two-dimensional array 5 * 5, filled with letters. Print a word, built by array elements marked with stars while reading them: A) Left to right in every row, B) Up to down in every column.
+ 4) Print words, built by even elements of every array row.
+ 5) Print words, built by odd elements of every array column.
 
   ### Task #4 Recursion
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task04/recursion)
    
-  1) Write a recursive function for calculating factorial of a natural number N;
-  2) Write a recursive function for calculating power A of a real number N (N - natural number);
-  3) Write a recursive function:
-      a) for calculating sum of digits of a natural number;
-      b) for calculating amount of digits of a natural number.
+ 1) Write a recursive function for calculating factorial of a natural number N;
+ 2) Write a recursive function for calculating power A of a real number N (N - natural number);
+ 3) Write a recursive function:
+     a) for calculating sum of digits of a natural number;
+     b) for calculating amount of digits of a natural number.
       
   ### Task #5 ATM
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task05/atm)
   
-  Create a thread-safe Automated Teller Machine.
+ Create a thread-safe Automated Teller Machine.
   
   ### Task #6 Lambda
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task06/functional/interface/src/root/solution)
   
-  Create a functional interface and use it with lambda expression.
+ Create a functional interface and use it with lambda expression.
 
   ### Task #7 Sea Battle
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task07/seabattle)
 
-  Create a Sea Battle game using Maven, Factory pattern and AI. 2D version.
+ Create a Sea Battle game using Maven, Factory pattern and AI. 2D version.
+
+  ### Task #8 Algorithms
+  [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task08/algo)
+
+ Create a realization of the following algorithms:
+ 1) Bubble sort
+ 2) Binary search
+ 3) Merge sort
+ 4) Radix sort
+ 5) Quick sort
