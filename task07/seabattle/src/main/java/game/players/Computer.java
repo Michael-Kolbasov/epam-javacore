@@ -259,7 +259,7 @@ public class Computer extends AbstractPlayer {
      */
     private void madeMiss(int y, int x, ShootDirection direction, Element[][] cells) {
         cells[y][x].setCellChecked(true);
-        cells[y][x].setSymbol('•');
+        cells[y][x].setSymbol('▪');
         System.out.println("Computer missed");
         if (isHunting()) {
             setUpdatedY(getFirstHitY());
