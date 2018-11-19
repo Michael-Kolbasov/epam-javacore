@@ -82,7 +82,7 @@ public class Computer extends AbstractPlayer {
     }
 
     /**
-     * This method performs random hits and or redirects to the performUpdatedHit() if hunting.
+     * This method performs random hits or redirects to the performUpdatedHit() if hunting.
      */
     private void performHit(int y, int x, ShootDirection direction, GameMap enemyMap, Element[][] cells) {
         if (cells[y][x].isCellChecked()) {
