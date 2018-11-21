@@ -60,3 +60,10 @@ Homework for Java EPAM 2018 courses.
  3) Merge sort
  4) Radix sort
  5) Quick sort
+
+  ### Task #9 Hippodrome
+  [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task09/hippodrome/src/main/java)
+
+ Create a hippodrome.
+ Player makes a bet on a horse. Horses have their own constant speed and random acceleration speed.
+ Each running horse represents a unique stream, so that all horses run in a parallel fashion.
