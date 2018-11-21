@@ -66,4 +66,4 @@ Homework for Java EPAM 2018 courses.
 
  Create a hippodrome.
  Player makes a bet on a horse. Horses have their own constant speed and random acceleration speed.
- Each running horse represents a unique stream, so that all horses run in a parallel fashion.
+ Each running horse represents a unique thread, so that all horses run in a parallel fashion.
