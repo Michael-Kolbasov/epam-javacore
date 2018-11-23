@@ -9,6 +9,14 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>task01/trafficlight</module>
+        <module>task02/string/manipulations</module>
+        <module>task03/array</module>
+        <module>task04/recursion</module>
+        <module>task05/atm</module>
+        <module>task06/functional/interface</module>
         <module>task07/seabattle</module>
+        <module>task08/algo</module>
+        <module>task09/hippodrome</module>
     </modules>
 </project>
