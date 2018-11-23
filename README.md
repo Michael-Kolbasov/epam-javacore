@@ -1,5 +1,5 @@
-# EPAM-JavaCore
-Homework for Java EPAM 2018 courses.
+# <epam> Java Core Training 2018
+Repo for homework
 
   ### Task #1 Traffic light
    [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task01/trafficlight/)
