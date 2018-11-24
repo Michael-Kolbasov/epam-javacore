@@ -2,7 +2,7 @@ package com.epam.game.objects;
 import java.util.ArrayList;
 
 /**
- * This class is the core of all game's objects. Everything consists of it:
+ * This class is the core of all games objects. Everything consists of it:
  * Ships have Element[] body with coordinates Y and X.
  * GameMap is an Element[][] with each cell having the corresponding coordinates.
  */
@@ -23,6 +23,10 @@ public class Element {
         this.x = x;
     }
 
+    /**
+     * Each cell has a unique combination of Y and X coordinate.
+     * @return  hashcode of a cell
+     */
     @Override
     public int hashCode() {
         return x + y;
