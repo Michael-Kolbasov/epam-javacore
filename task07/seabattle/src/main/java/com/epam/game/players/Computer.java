@@ -200,6 +200,11 @@ public class Computer extends AbstractPlayer {
 
     /**
      * This method marks the hit and checks if it is time to hunt or hunt is over.
+     * @param y ship element Y coordinate
+     * @param x ship element X coordinate
+     * @param direction the {@code Computer.ShootDirection} direction of a shot if any.
+     * @param enemyMap  map on which the ship is located
+     * @param cells     array representation of the {@code enemyMap}
      */
     private void madeShot(int y, int x, ShootDirection direction, GameMap enemyMap, Element[][] cells) {
         Ship ship = GameMap.getShipFromMap(enemyMap, y, x);

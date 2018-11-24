@@ -43,6 +43,13 @@ public class Human extends AbstractPlayer {
         }
     }
 
+    /**
+     * This method is responsible for marking hit on a ship if shot was successful.
+     * @param y ship element Y coordinate
+     * @param x ship element X coordinate
+     * @param enemyMap  map on which the ship is located
+     * @param cells     array representation of the {@code enemyMap}
+     */
     private void madeShot(int y, int x, GameMap enemyMap, Element[][] cells) {
         Ship ship = GameMap.getShipFromMap(enemyMap, y, x);
         boolean isShotAlready = false;
@@ -95,6 +102,9 @@ public class Human extends AbstractPlayer {
         }
     }
 
+    /**
+     * This method is responsible for printing bad result (miss) of a shot.
+     */
     private void madeMiss() {
         System.out.println("No luck this time. You have missed.");
         System.out.println();
