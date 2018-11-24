@@ -91,10 +91,11 @@ public class Computer extends AbstractPlayer {
             if (direction == null) {
                 Character yAsCharacter = (char) (y + 65);
                 System.out.println("Computer shoots cell " + yAsCharacter + x);
+                waitOneSecond();
                 if (cells[y][x].getState() == ElementState.SHIP) {
                     madeShot(y, x, direction, enemyMap, cells);
                 } else {
-                    madeMiss(y, x, direction, cells);
+                    madeMiss(y, x, cells);
                 }
             } else {
                 setUpNewCoordinates(getUpdatedY(), getUpdatedX(), direction, cells);
@@ -118,7 +119,7 @@ public class Computer extends AbstractPlayer {
             if (cells[y][x].getState() == ElementState.SHIP) {
                 madeShot(y, x, direction, enemyMap, cells);
             } else {
-                madeMiss(y, x, direction, cells);
+                madeMiss(y, x, cells);
             }
         }
     }
@@ -209,7 +210,7 @@ public class Computer extends AbstractPlayer {
     private void madeShot(int y, int x, ShootDirection direction, GameMap enemyMap, Element[][] cells) {
         Ship ship = GameMap.getShipFromMap(enemyMap, y, x);
         if (ship == null) {
-            madeMiss(y, x, direction, cells);
+            madeMiss(y, x, cells);
             setDirection(direction.revert());
             setUpdatedY(getFirstHitY());
             setUpdatedX(getFirstHitX());
@@ -251,6 +252,11 @@ public class Computer extends AbstractPlayer {
         }
     }
 
+    /**
+     * This method sets coordinates of the first hit on the ship and sets the hunting mode on.
+     * @param y first successful Y hit coordinate
+     * @param x first successful X hit coordinate
+     */
     private void startHunt(int y, int x) {
         setHunting(true);
         setFirstHitX(x);
@@ -262,7 +268,7 @@ public class Computer extends AbstractPlayer {
     /**
      * This method marks a miss and resets Y and X to initial state.
      */
-    private void madeMiss(int y, int x, ShootDirection direction, Element[][] cells) {
+    private void madeMiss(int y, int x, Element[][] cells) {
         cells[y][x].setCellChecked(true);
         cells[y][x].setSymbol('▪');
         System.out.println("Computer missed");

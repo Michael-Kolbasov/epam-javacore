@@ -28,9 +28,10 @@ public class Human extends AbstractPlayer {
      */
     @Override
     public void fire() {
-        while (checkOtherInput(getUserInput())) {
-            checkOtherInput(getUserInput());
-        }
+        boolean shooting;
+        do {
+            shooting = checkOtherInput(getUserInput());
+        } while (!shooting);
         int y = getY(userInput);
         int x = getX(userInput);
         GameMap enemyMap = gameProcess.getEnemyMap();
@@ -49,6 +50,11 @@ public class Human extends AbstractPlayer {
      * @param x ship element X coordinate
      * @param enemyMap  map on which the ship is located
      * @param cells     array representation of the {@code enemyMap}
+     *
+     * @throws NullPointerException madeShot() may potentially throw a NPE if {@code ship.getElementByCoordinates(y, x)}
+     *                              returns null, but it is impossible due to the program logic: since we are
+     *                              already in madeShot(), there is a ship on this cell - it's been checked in
+     *                              fire() method.
      */
     private void madeShot(int y, int x, GameMap enemyMap, Element[][] cells) {
         Ship ship = GameMap.getShipFromMap(enemyMap, y, x);
@@ -125,7 +131,7 @@ public class Human extends AbstractPlayer {
         fireMatcher = firePattern.matcher(userInput);
         if (fireMatcher.matches()) {
             fireMatcher.reset();
-            return false;
+            return true;
         } else if (userInput.equalsIgnoreCase("ships")) {
             GameMap enemyMap = gameProcess.getEnemyMap();
             int shipsLeft = GameMap.countHowManyShipsLeft(enemyMap);
@@ -136,7 +142,7 @@ public class Human extends AbstractPlayer {
             }
             enemyMap.displayEnemyMap();
             waitOneSecond();
-            return true;
+            return false;
         } else if (userInput.equalsIgnoreCase("quit")) {
             GameProcess.closeConnection();
             System.exit(0);
@@ -144,7 +150,7 @@ public class Human extends AbstractPlayer {
             new AppLauncher().launchRandom();
         } else {
             System.out.println("Wrong input");
-            checkOtherInput(getUserInput());
+            return false;
         }
         return false;
     }
