@@ -1,8 +1,10 @@
 package com.epam.game.launch;
+
 import com.epam.game.objects.field.GameMap;
 import com.epam.game.players.Computer;
 import com.epam.game.players.AbstractPlayer;
 import com.epam.game.players.Human;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -77,15 +79,6 @@ public class GameProcess {
         return player.getMap();
     }
 
-    private String getUserInput() {
-        try {
-            userInput = reader.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return userInput;
-    }
-
     private void playerPerformHit() {
         do {
             if (checkFinish()) {
@@ -112,6 +105,15 @@ public class GameProcess {
                 break;
             }
         } while (enemy.getResult());
+    }
+
+    private String getUserInput() {
+        try {
+            userInput = reader.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return userInput;
     }
 
     private boolean checkFinish() {

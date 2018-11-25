@@ -123,9 +123,9 @@ public class GameMap {
             System.out.print(coordinateX++ + " ");
             for (int x = 0; x < WIDTH; x++) {
                 if (!(cells[y][x].isCellChecked())) {
-                    System.out.print(cells[y][x].getSurrogate() + " ");
+                    System.out.print(cells[y][x].getSurrogate() + "\t");
                 } else {
-                    System.out.print(cells[y][x].getSymbol() + " ");
+                    System.out.print(cells[y][x].getSymbol() + "\t");
                 }
                 if (x != 9) {
                     System.out.print("| ");
