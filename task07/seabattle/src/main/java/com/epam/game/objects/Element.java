@@ -59,7 +59,8 @@ public class Element {
     }
 
     /**
-     * This method is used when a ship becomes dead to set all surrounded cells to Checked.
+     *  This method is used when a ship becomes dead to set all surrounded cells to Checked or after putting ships
+     * randomly to set their surrounding cells to Border.
      */
     public ArrayList<Element> getSurround() {
         ArrayList<Element> elements = new ArrayList<>();
