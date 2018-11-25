@@ -71,7 +71,7 @@ public abstract class Ship implements ShipBehavior {
 
     /**
      * When a Player or a Computer hit on a ship coordinate, this method makes all the work on
-     * changing the ship's state.
+     * changing the ships state.
      *
      * @param y coordinate Y of an Element in ship's body
      * @param x coordinate X of an Element in ship's body

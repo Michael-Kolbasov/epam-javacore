@@ -5,6 +5,13 @@ import java.util.ArrayList;
  * This class is the core of all games objects. Everything consists of it:
  * Ships have Element[] body with coordinates Y and X.
  * GameMap is an Element[][] with each cell having the corresponding coordinates.
+ *
+ * {@code y}    elements' Y coordinate
+ * {@code X}    elements' X coordinate
+ * {@code state}    elements' state (WATER, BORDER, SHIP)
+ * {@code symbol}   elements' symbol representation on the map
+ * {@code isCellChecked}    a flag that helps to determinate if player has already checked this cell
+ * {@code surrogate}    elements' symbol for showing enemy map while cell hasn't been checked
  */
 public class Element {
     private int y;
