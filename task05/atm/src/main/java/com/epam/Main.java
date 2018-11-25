@@ -1,4 +1,4 @@
-package main.java;
+package com.epam;
 
 /**
  * Task #5 Thread-safe Automated Teller Machine

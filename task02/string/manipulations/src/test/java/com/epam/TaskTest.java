@@ -1,6 +1,4 @@
 package com.epam;
-
-import com.epam.Task;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.Before;
@@ -9,7 +7,7 @@ import static org.junit.Assert.*;
 
 
 public class TaskTest {
-    public Task task;
+    private Task task;
 
     @Before
     public void setUp() {

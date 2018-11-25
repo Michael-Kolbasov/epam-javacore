@@ -1,6 +1,4 @@
 package com.epam;
-
-import com.epam.Task12x271;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

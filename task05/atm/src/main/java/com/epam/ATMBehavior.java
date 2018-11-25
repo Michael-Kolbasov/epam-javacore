@@ -1,4 +1,4 @@
-package main.java;
+package com.epam;
 
 /**
  * This interface provides basic billing methods for ATMImpl class.

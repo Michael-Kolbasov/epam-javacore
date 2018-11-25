@@ -1,9 +1,7 @@
 package com.epam.game.objects.ships;
-
 import com.epam.game.objects.ElementState;
 import com.epam.game.objects.field.GameMap;
 import com.epam.game.objects.Element;
-
 import java.util.Random;
 
 /**

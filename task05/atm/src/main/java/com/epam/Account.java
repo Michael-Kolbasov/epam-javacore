@@ -1,4 +1,4 @@
-package main.java;
+package com.epam;
 import java.math.BigDecimal;
 
 /**

@@ -1,10 +1,8 @@
 package com.epam.game.objects.field;
-
 import com.epam.game.objects.Element;
 import com.epam.game.objects.ElementState;
 import com.epam.game.objects.ships.Ship;
 import com.epam.game.objects.ships.ShipFactory;
-
 import java.util.ArrayList;
 
 /**

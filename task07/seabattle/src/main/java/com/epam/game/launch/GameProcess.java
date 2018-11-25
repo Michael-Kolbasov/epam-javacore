@@ -1,10 +1,8 @@
 package com.epam.game.launch;
-
 import com.epam.game.objects.field.GameMap;
 import com.epam.game.players.Computer;
 import com.epam.game.players.AbstractPlayer;
 import com.epam.game.players.Human;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -40,6 +38,14 @@ public class GameProcess {
         }
     }
 
+    public GameMap getEnemyMap() {
+        return enemy.getMap();
+    }
+
+    public GameMap getPlayerMap() {
+        return player.getMap();
+    }
+
     /**
      * This method starts the game.
      */
@@ -69,14 +75,6 @@ public class GameProcess {
         closeConnection();
         player.getMap().displayMap();
         enemy.getMap().displayEnemyMap();
-    }
-
-    public GameMap getEnemyMap() {
-        return enemy.getMap();
-    }
-
-    public GameMap getPlayerMap() {
-        return player.getMap();
     }
 
     private void playerPerformHit() {

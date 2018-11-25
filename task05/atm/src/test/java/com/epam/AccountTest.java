@@ -1,5 +1,4 @@
-package test.java;
-import main.java.Account;
+package com.epam;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertFalse;
@@ -16,16 +15,16 @@ public class AccountTest {
 
     @Test
     public void testWithdraw_InsufficientFunds() {
-        Assert.assertFalse(account.withdraw(200));
-        Assert.assertFalse(account.withdraw(-200));
-        Assert.assertFalse(account.withdraw(100.01));
-        Assert.assertFalse(account.withdraw(0));
+        assertFalse(account.withdraw(200));
+        assertFalse(account.withdraw(-200));
+        assertFalse(account.withdraw(100.01));
+        assertFalse(account.withdraw(0));
     }
 
     @Test
     public void testWithdraw_AllOK() {
-        Assert.assertTrue(account.withdraw(50));
-        Assert.assertTrue(account.withdraw(50));
-        Assert.assertFalse(account.withdraw(50));
+        assertTrue(account.withdraw(50));
+        assertTrue(account.withdraw(50));
+        assertFalse(account.withdraw(50));
     }
 }

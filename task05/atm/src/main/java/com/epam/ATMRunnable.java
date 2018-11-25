@@ -1,4 +1,4 @@
-package main.java;
+package com.epam;
 
 /**
  * This class creates a process that deposits 500 funds on the account and then tries to withdraw 100 funds 10 times.
