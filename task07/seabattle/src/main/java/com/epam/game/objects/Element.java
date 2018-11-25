@@ -25,11 +25,12 @@ public class Element {
 
     /**
      * Each cell has a unique combination of Y and X coordinate.
+     * The multiplying (y + 1) block serves the purpose of distinguishing cells like (0, 1) and (1, 0).
      * @return  hashcode of a cell
      */
     @Override
     public int hashCode() {
-        return x + y;
+        return (x + y) * (y + 1);
     }
 
     @Override
