@@ -64,6 +64,7 @@ public class GameProcess {
             playerPerformHit();
             enemyPerformHit();
         }
+        closeConnection();
         player.getMap().displayMap();
         enemy.getMap().displayEnemyMap();
     }
