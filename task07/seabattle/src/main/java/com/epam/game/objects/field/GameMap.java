@@ -92,7 +92,7 @@ public class GameMap {
         for (int y = 0; y < HEIGTH; y++) {
             System.out.print(coordinateX++ + " ");
             for (int x = 0; x < WIDTH; x++) {
-                System.out.print(cells[y][x].getSymbol() + " ");
+                System.out.print(cells[y][x].getSymbol() + "\t");
                 if (x != 9) {
                     System.out.print("| ");
                 }
