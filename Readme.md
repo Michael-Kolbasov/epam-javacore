@@ -54,7 +54,7 @@
   ### Task #8 Algorithms
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task08/algo)
 
- Create a realization of the following com.epam.algorithms:
+ Create a realization of the following algorithms:
  1) Bubble sort
  2) Binary search
  3) Merge sort
@@ -65,5 +65,5 @@
   [Solution](https://github.com/Michael-Kolbasov/EPAM-JavaCore/tree/master/task09/hippodrome/)
 
  Create a hippodrome.
- com.epam.Player makes a bet on a horse. Horses have their own constant speed and random acceleration speed.
+ Player makes a bet on a horse. Horses have their own constant speed and random acceleration speed.
  Each running horse represents a unique thread, so that all horses run in a parallel fashion.
