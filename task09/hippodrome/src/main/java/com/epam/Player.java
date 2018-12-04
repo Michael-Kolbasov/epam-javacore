@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * com.epam.Player class provides methods for betting money and continuing or quiting the game.
+ * Player class provides methods for betting money and continuing or quiting the game.
  */
 public class Player {
     private int money;
@@ -25,8 +25,8 @@ public class Player {
     }
 
     /**
-     * This method makes it possible to bet on a com.epam.Horse from the com.epam.Game instance.
-     * @return  com.epam.Horse that player bets on.
+     * This method makes it possible to bet on a Horse from the Game instance.
+     * @return  Horse that player bets on.
      */
     public Horse chooseAHorse() {
         System.out.println("Choose a horse between:");

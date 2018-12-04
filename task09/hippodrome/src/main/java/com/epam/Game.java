@@ -9,12 +9,12 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- *  com.epam.Game class provides logic for the game.
- *  It sets Horses to run through the com.epam.Field, com.epam.Player to play and so on infinitely, until player won't lose all money or
+ *  Game class provides logic for the game.
+ *  It sets Horses to run through the Field, Player to play and so on infinitely, until player won't lose all money or
  * type 'quit' in the end of the run.
  *  It also shows the result of the run after all horses are finished like:
- *      1. com.epam.Horse-winner-name --- time of run
- *      2. com.epam.Horse-that-ran-second --- time of run
+ *      1. Horse-winner-name --- time of run
+ *      2. Horse-that-ran-second --- time of run
  *
  *  {@code lock} is used to synchronize methods to determine the winner.
  *  {@code horses} is a list of horses running.
@@ -67,9 +67,9 @@ public class Game {
 
     /**
      *  In this method horses begin to run. It's a parallel stream of all horses, which become later a list of
-     * List<Future<com.epam.Horse>> to manipulate their result.
+     * List<Future<Horse>> to manipulate their result.
      * @param horses    horses running
-     * @return horsesRunning    List<Future<com.epam.Horse>> a list of horses that returned from their run (in both senses)
+     * @return horsesRunning    List<Future<Horse>> a list of horses that returned from their run (in both senses)
      */
     private List<Future<Horse>> startRun(List<Horse> horses) {
         List<Future<Horse>> horsesRunning = new ArrayList<>(5);
